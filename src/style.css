@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #3B8D8C;
+  --color-teal-light: #4fa8a7;
+  --color-teal-dark: #2d6e6d;
+  --color-coral: #E8845C;
+  --color-coral-light: #f0a080;
+  --color-coral-dark: #c96840;
+  --color-gold: #F5C542;
+  --color-dark: #2D2D2D;
+  --color-muted: #F7F7F7;
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2D2D2D;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-[#3B8D8C] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#2d6e6d] transition-colors duration-200 inline-block;
+}
+
+.btn-secondary {
+  @apply border-2 border-[#3B8D8C] text-[#3B8D8C] font-semibold px-6 py-3 rounded-full hover:bg-[#3B8D8C] hover:text-white transition-colors duration-200 inline-block;
+}
+
+.btn-coral {
+  @apply bg-[#E8845C] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#c96840] transition-colors duration-200 inline-block;
+}
+
+.section-title {
+  @apply text-3xl font-extrabold text-[#2D2D2D] font-heading;
+}
+
+.paw-divider {
+  @apply flex items-center justify-center gap-3 my-2;
+}
